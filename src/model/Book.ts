@@ -1,55 +1,59 @@
-
 import IBook from './IBook';
 import { BaseModel } from './Model';
 
-
 export default class Book extends BaseModel implements IBook {
-
-    private _author: string;
-    private _title: string;
-    private _publisher: string;
-    private _age: number;
+    public id: Number;
+    public author: string;
+    public title: string;
+    public publisher: string;
+    public pages: number;
 
     constructor(dto: IBook) {
         super();
-        this._author = dto.author
-        this._title = dto.title
-        this._publisher = dto.publisher
-        this._age = dto.age
+        this.id = dto.id;
+        this.author = dto.author
+        this.title = dto.title
+        this.publisher = dto.publisher
+        this.pages = dto.pages
     }
 
-    get author(){
-        return this._author;
+    get getId(){
+        return this.id;
     }
 
-    set author(value: string){
-        this._author = value;
+    set setId(value: Number){
+        this.id = value;
     }
 
-    get title(){
-        return this._title;
+    get getAuthor(){
+        return this.author;
     }
 
-    set title(value: string){
-
-        this._title = value;
+    set setAuthor(value: string){
+        this.author = value;
     }
 
-    get publisher(){
-        return this._publisher;
+    get getTitle(){
+        return this.title;
     }
 
-    set publisher(value: string){
-        this._publisher = value;
+    set setTitle(value: string){
+        this.title = value;
     }
 
-    get age() {
-
-        return this._age;
+    get getPublisher(){
+        return this.publisher;
     }
 
-    set age(value: number){
-        this._age = value;
+    set setPublisher(value: string){
+        this.publisher = value;
     }
 
+    get getPages() {
+        return this.pages;
+    }
+
+    set setPages(value: number){
+        this.pages = value;
+    }
 }
