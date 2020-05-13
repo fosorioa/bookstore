@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f2963372-3b49-4e02-8f0f-48cd248e6802/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/FOABookStore",
+    "appService.deploySubpath": ""
+}

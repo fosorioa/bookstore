@@ -10,7 +10,7 @@ import bodyParser from 'koa-bodyparser';
 import json from 'koa-json';
 
 const app = new Koa();
-const port:Number = 3000;
+const port:any = process.env.PORT || 80;
 
 app.use(bodyParser());
 

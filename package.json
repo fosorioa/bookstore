@@ -15,7 +15,8 @@
     "koa-json": "^2.0.2",
     "koa-router": "^8.0.8",
     "mongodb": "^3.5.6",
-    "openpay": "^1.0.5"
+    "openpay": "^1.0.5",
+    "typescript": "^3.9.2"
   },
   "devDependencies": {
     "@types/koa-json": "^2.0.18",
