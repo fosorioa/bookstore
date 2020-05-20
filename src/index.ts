@@ -2,7 +2,7 @@ import Koa from 'koa';
 
 import * as bookRouter from './routers/bookRouter';
 import * as transferRouter from './routers/transferRouter';
-import * as clientRouter from './routers/clientRouter';
+import * as customerRouter from './routers/customerRouter';
 import * as bankAccountRouter from './routers/bankAccountRouter';
 import * as payoutRouter from './routers/payoutRouter';
 
@@ -20,7 +20,7 @@ bookRouter.init(app);
 
 transferRouter.init(app);
 
-clientRouter.init(app);
+customerRouter.init(app);
 
 bankAccountRouter.init(app);
 
